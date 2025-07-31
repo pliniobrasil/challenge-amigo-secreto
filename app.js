@@ -1,11 +1,19 @@
 let nomeParticipantes = [];
 
+function verificarParticipante(nome) {
+    // Compara todos os nomes em minúsculo para evitar duplicidade por maiúsculas/minúsculas
+    return nomeParticipantes.some(participante => participante.toLowerCase() === nome.toLowerCase());
+}
+
 function adicionarAmigo() {
     let nome = document.getElementById('amigo').value;
 
     if (nome == '') {
         alert('Por favor, insira um nome.');
-    } else if (nome != '') {
+    } else if (verificarParticipante(nome)) {
+        alert('Este participante já foi adicionado.');
+        limparCampo();
+    } else {
         nomeParticipantes.push(nome);
         limparCampo();
         listarParticipantes();
@@ -13,7 +21,7 @@ function adicionarAmigo() {
 }
 
 function limparCampo() {
-    nome = document.querySelector('input');
+    let nome = document.querySelector('input');
     nome.value = '';
 }
 
