@@ -21,7 +21,7 @@
 <p align="justify">
 Projeto desenvolvido para o challenge do curso Iniciante em programação, parceria entre Oracle e Alura, para aplicação dos conhecimentos adquiridos em Javascript.
 
-O projeto permitirá a criação de uma lista de amigos para realização do sorteio de Amigo Secreto.
+O projeto permitirá a criação de uma lista de amigos para realização do sorteio de Amigo Secreto. Como desafio foi implantado a verificação de duplicidade de nome.
 
 ![Print da tela inicial do challenge amigo secreto](https://github.com/pliniobrasil/challenge-amigo-secreto/blob/main/assets/print-tela-amigo-secreto.png)
 </p>
@@ -30,9 +30,11 @@ O projeto permitirá a criação de uma lista de amigos para realização do sor
 
 :heavy_check_mark: `Funcionalidade 1:` Adicionar nome do amigo para participar de Amigo Secreto.
 
-:heavy_check_mark: `Funcionalidade 2:` Armazenar e listar o nome dos amigos participantes do Amigo Secreto.
+:heavy_check_mark: `Funcionalidade 2:` Verifica a duplicidade do nome inserido na lista dos amigos participantes do Amigo Secreto.
 
-:heavy_check_mark: `Funcionalidade 3:` Realizar sorteio do Amigo Secreto.
+:heavy_check_mark: `Funcionalidade 3:` Lista os nomes dos amigos participantes do Amigo Secreto.
+
+:heavy_check_mark: `Funcionalidade 4:` Realizar sorteio do Amigo Secreto.
 
 ## Ferramentas utilizadas
 
