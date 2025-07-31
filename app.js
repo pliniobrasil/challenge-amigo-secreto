@@ -26,3 +26,16 @@ function listarParticipantes() {
         lista.appendChild(item);
     });
 }
+
+function sortearAmigo() {
+    if (nomeParticipantes.length < 2) {
+        alert('É necessário pelo menos dois participantes para realizar o sorteio.');
+        return;
+    }
+
+    let amigoSorteado = nomeParticipantes[Math.floor(Math.random() * nomeParticipantes.length)];
+    let resultado = document.getElementById('resultado');
+    resultado.textContent = `O amigo secreto sorteado é: ${amigoSorteado}`;
+    nomeParticipantes = nomeParticipantes.filter(participante => participante !== amigoSorteado);
+    listarParticipantes();
+}
